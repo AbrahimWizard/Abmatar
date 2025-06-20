@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abmatar Portfolio</title>
+    <title>Contact - Abmatar</title>
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/scripts.js" defer></script>
-    <!-- TypewriterJS for hero text animation -->
-    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.19.0/dist/core.js" defer></script>
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo"><a href="index.html" style="color: #fff; text-decoration:none">Abmatar</a></div>
+        <div class="logo"><a href="index.html" style="color:#fff;text-decoration:none">Abmatar</a></div>
         <div class="toggle-button" id="toggle-button">
           <span></span>
           <span></span>
@@ -29,15 +27,19 @@
     </header>
 
     <section class="hero">
-      <h1>Hi, I'm Abrahim!</h1>
-      <p id="hero-text">I'm a <span></span></p>
-      <a href="projects.html" class="btn-primary">See My Work</a>
+      <h1>Get in Touch</h1>
+      <p>I love hearing from people. Feel free to send me a message!</p>
     </section>
 
-    <section class="now-playing" style="text-align:center; padding:2rem;">
-      <h2>Now Playing</h2>
-      <!-- Replace the embed source with your favorite track -->
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7GhIk7Il098yCjg4BQjzvb" width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <section style="max-width:600px;margin:0 auto;padding:2rem;">
+      <form>
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button class="btn-primary" type="submit">Send Message</button>
+        </div>
+      </form>
     </section>
 
     <footer>
