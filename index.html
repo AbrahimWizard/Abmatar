@@ -1,17 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="neural-future" data-loadstate="loading">
   <head>
+    <!-- Essential Meta Information & SEO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Abmatar</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Neural Portfolio - A futuristic, immersive experience by Abrahim" />
+    <meta name="theme-color" content="#0D0D0D" />
+    <meta property="og:title" content="Neural Portfolio: The Future of Design" />
+    <meta property="og:description" content="Dive into the neural network of creativity." />
+    <meta property="og:image" content="path-to-your-og-image.jpg" />
+    <title>Neural Portfolio - The Future of Design</title>
+    <!-- Web Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to Abmatar!</h1>
-      <p>This website is for ABRAHIM MATAR hehehe.</p>
+    <!-- Loader Section -->
+    <div id="loader" class="loader" role="alert" aria-live="polite">
+      <div class="loader-animation">
+        <!-- Simple SVG Loader -->
+        <svg width="100" height="100" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" stroke="#0F0" stroke-width="10" fill="none" stroke-dasharray="283" stroke-dashoffset="75"></circle>
+        </svg>
+      </div>
+      <p>Initializing neural pathways...</p>
+    </div>
+    <!-- Header with Navigation & Theme Toggle -->
+    <header id="site-header" class="site-header">
+      <div class="logo">
+        <h1>Neural Portfolio</h1>
+      </div>
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#ai-core">AI Core</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
     </header>
-    <p> </p>
-    <p>I went my brother dish</p>
+    <!-- Hero Section with Dynamic Background -->
+    <section id="hero" class="hero-section" role="banner" aria-label="Welcome Banner">
+      <canvas id="hero-canvas" role="img" aria-label="Dynamic background of neural particles">Your browser does not support the canvas element.</canvas>
+      <div class="hero-content">
+        <h2 class="hero-title">Dive into the Neural Network</h2>
+        <p class="hero-tagline">Where creativity meets the digital frontier.</p>
+        <a href="#portfolio" class="cta-button">Explore Projects</a>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section" role="region" aria-label="About the Creator">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>Hello, I'm Abrahim, a visionary web architect merging digital innovation with artistic design. My journey explores the intersections of technology, creativity, and immersive storytelling.</p>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section" role="region" aria-label="Portfolio Showcase">
+      <h2>My Projects</h2>
+      <div class="portfolio-grid">
+        <article class="portfolio-item" aria-labelledby="project1-title">
+          <img src="project1.jpg" alt="Project 1: Futuristic Interface" loading="lazy" />
+          <h3 id="project1-title">Futuristic Interface</h3>
+          <p>A cutting-edge design for an immersive digital experience.</p>
+        </article>
+        <article class="portfolio-item" aria-labelledby="project2-title">
+          <img src="project2.jpg" alt="Project 2: Neural Data Visualizer" loading="lazy" />
+          <h3 id="project2-title">Neural Data Visualizer</h3>
+          <p>Visualizing complex data through interactive neural-inspired design.</p>
+        </article>
+      </div>
+    </section>
+    <!-- AI Core Interactive Dialog -->
+    <dialog id="ai-core" class="ai-dialog" aria-labelledby="ai-dialog-title">
+      <form method="dialog" class="ai-form">
+        <h2 id="ai-dialog-title">AI Core Interface</h2>
+        <p>Ask the AI anything about my work or design insights.</p>
+        <input type="text" class="ai-input" placeholder="Type your question here..." aria-label="AI Query" />
+        <output class="ai-response" role="status"></output>
+        <div class="dialog-actions">
+          <button type="submit">Submit</button>
+          <button type="button" class="dialog-close">Close</button>
+        </div>
+      </form>
+    </dialog>
+    <!-- Footer / Contact Section with Digital Rain Effect -->
+    <footer id="contact" class="footer-section" role="contentinfo" aria-label="Contact Information">
+      <div class="footer-content">
+        <h2>Contact Me</h2>
+        <p>Let's connect and create something amazing together.</p>
+        <div class="contact-links">
+          <a href="mailto:your.email@example.com" aria-label="Email">Email</a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="digital-rain" aria-hidden="true"></div>
+    </footer>
+    <!-- SVG Definitions -->
+    <svg width="0" height="0" style="position: absolute">
+      <defs>
+        <linearGradient id="neural-gradient" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#0F0" />
+          <stop offset="100%" stop-color="#0FF" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <!-- Main JavaScript -->
+    <script src="assets/scripts.js"></script>
   </body>
 </html>

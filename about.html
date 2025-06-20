@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="neural-future">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Abmatar</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html" style="color:#fff;text-decoration:none">Abmatar</a></div>
+        <div class="toggle-button" id="toggle-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>About Me</h1>
+      <p>
+        I'm Abrahim, a passionate developer who loves building fun and useful web
+        applications. Here are a few fun facts about me:
+      </p>
+      <ul style="text-align:left; max-width:600px; margin:0 auto;">
+        <li>I enjoy exploring new technologies and frameworks.</li>
+        <li>I have a habit of tinkering with gadgets and IoT devices.</li>
+        <li>When I'm not coding, you'll find me playing guitar or gaming.</li>
+      </ul>
+    </section>
+
+    <section style="max-width:960px;margin:0 auto;padding:2rem;">
+      <h2>My Story</h2>
+      <p>
+        This section could have a timeline of your journey. Customize it by
+        adding milestones, images, or even a slideshow of memorable moments.
+      </p>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Abmatar
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

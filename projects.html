@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="neural-future">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Abmatar</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html" style="color:#fff;text-decoration:none">Abmatar</a></div>
+        <div class="toggle-button" id="toggle-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Projects</h1>
+      <p>Here are some of the things I've been working on recently.</p>
+    </section>
+
+    <section class="projects">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A short description of the project goes here.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Another cool project description.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>An awesome project that you're proud of.</p>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Abmatar
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
