@@ -328,3 +328,12 @@ function throttle(func, limit) {
     }, 16));
   });
   
+  // Burger menu toggle
+const burgerToggle = document.getElementById("burger-toggle");
+const navList = document.querySelector(".nav-list");
+
+if (burgerToggle && navList) {
+  burgerToggle.addEventListener("click", () => {
+    navList.classList.toggle("active");
+  });
+}
