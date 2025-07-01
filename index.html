@@ -1,200 +1,156 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="neural-future" data-loadstate="loading">
+<html lang="en">
   <head>
-    <!-- Essential Meta Information & SEO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Neural Portfolio - A futuristic, immersive experience by [Your Name]"
+      content="Abrahim Matar - Computer Science Portfolio"
     />
     <meta name="theme-color" content="#0D0D0D" />
-    <meta
-      property="og:title"
-      content="Neural Portfolio: The Future of Design"
-    />
-    <meta
-      property="og:description"
-      content="Dive into the neural network of creativity."
-    />
-    <meta property="og:image" content="path-to-your-og-image.jpg" />
+    <title>Abrahim Matar | Home</title>
 
-    <title>Neural Portfolio - The Future of Design</title>
-
-    <!-- Web Fonts & Styles -->
+    <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <script>
+      if (location.hostname === "abmatar.com") {
+        location.href = "https://www.abmatar.com" + location.pathname;
+      }
+    </script>
   </head>
+
   <body>
-    <!-- Loader Section -->
-    <div id="loader" class="loader" role="alert" aria-live="polite">
-      <div class="loader-animation">
-        <!-- Simple SVG Loader -->
-        <svg width="100" height="100" viewBox="0 0 100 100">
-          <circle
-            cx="50"
-            cy="50"
-            r="45"
-            stroke="#0F0"
-            stroke-width="10"
-            fill="none"
-            stroke-dasharray="283"
-            stroke-dashoffset="75"
-          ></circle>
-        </svg>
-      </div>
-      <p>Initializing neural pathways...</p>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+      <canvas id="matrix-loader"></canvas>
+      <p>Welcome to my digital world...</p>
     </div>
 
-    <!-- Header with Navigation & Theme Toggle -->
-    <header id="site-header" class="site-header">
-      <div class="logo">
-        <h1>Neural Portfolio</h1>
-      </div>
-      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="logo">Abrahim Matar</div>
+      <nav class="main-nav" id="main-nav">
         <ul class="nav-list">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#ai-core">AI Core</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+      <button id="burger-toggle" aria-label="Toggle Navigation">☰</button>
     </header>
 
-    <!-- Hero Section with Dynamic Background -->
-    <section
-      id="hero"
-      class="hero-section"
-      role="banner"
-      aria-label="Welcome Banner"
-    >
-      <canvas
-        id="hero-canvas"
-        role="img"
-        aria-label="Dynamic background of neural particles"
-      >
-        Your browser does not support the canvas element.
-      </canvas>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
       <div class="hero-content">
-        <h2 class="hero-title">Dive into the Neural Network</h2>
-        <p class="hero-tagline">Where creativity meets the digital frontier.</p>
-        <a href="#portfolio" class="cta-button">Explore Projects</a>
+        <img src="profile.jpg" alt="Abrahim Matar" class="profile-pic" />
+        <h1>Hi, I'm Abrahim Matar</h1>
+        <p>Computer Science Student | Future AI Engineer</p>
+        <p class="mission">
+          Passionate about building smart systems that solve real-world
+          problems.
+        </p>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn">Explore Projects</a>
+          <a href="Abrahim_Matar_CV.pdf" class="btn" download
+            >Download Resume</a
+          >
+        </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section
-      id="about"
-      class="about-section"
-      role="region"
-      aria-label="About the Creator"
-    >
-      <div class="about-content">
-        <h2>About Me</h2>
+    <!-- Intro / Mission -->
+    <section id="mission" class="intro">
+      <div class="container">
+        <h2>My Mission</h2>
         <p>
-          Hello, I'm [Your Name], a visionary web architect merging digital
-          innovation with artistic design. My journey explores the intersections
-          of technology, creativity, and immersive storytelling.
+          I believe technology isn’t just a tool — it’s a gateway to meaning, to
+          mastery, to connection. Every line of code I write brings me one step
+          closer to that vision.
         </p>
       </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section
-      id="portfolio"
-      class="portfolio-section"
-      role="region"
-      aria-label="Portfolio Showcase"
-    >
-      <h2>My Projects</h2>
-      <div class="portfolio-grid">
-        <article class="portfolio-item" aria-labelledby="project1-title">
-          <img
-            src="project1.jpg"
-            alt="Project 1: Futuristic Interface"
-            loading="lazy"
-          />
-          <h3 id="project1-title">Futuristic Interface</h3>
-          <p>A cutting-edge design for an immersive digital experience.</p>
-        </article>
-        <article class="portfolio-item" aria-labelledby="project2-title">
-          <img
-            src="project2.jpg"
-            alt="Project 2: Neural Data Visualizer"
-            loading="lazy"
-          />
-          <h3 id="project2-title">Neural Data Visualizer</h3>
-          <p>
-            Visualizing complex data through interactive neural-inspired design.
-          </p>
-        </article>
-        <!-- Additional project items can be added here -->
+    <!-- Preview Tiles -->
+    <section id="previews" class="previews">
+      <div class="preview-grid">
+        <a href="projects.html" class="preview-tile">
+          <h3>Featured Project</h3>
+          <p>Check out the latest project I'm building this summer.</p>
+        </a>
+        <a href="about.html" class="preview-tile">
+          <h3>Who Am I?</h3>
+          <p>Learn more about my background, skills, and journey.</p>
+        </a>
       </div>
     </section>
 
-    <!-- AI Core Interactive Dialog -->
-    <dialog id="ai-core" class="ai-dialog" aria-labelledby="ai-dialog-title">
-      <form method="dialog" class="ai-form">
-        <h2 id="ai-dialog-title">AI Core Interface</h2>
-        <p>Ask the AI anything about my work or design insights.</p>
-        <input
-          type="text"
-          class="ai-input"
-          placeholder="Type your question here..."
-          aria-label="AI Query"
-        />
-        <output class="ai-response" role="status"></output>
-        <div class="dialog-actions">
-          <button type="submit">Submit</button>
-          <button type="button" class="dialog-close">Close</button>
-        </div>
-      </form>
-    </dialog>
+    <!-- Currently Learning Section -->
+    <section id="learning" class="learning">
+      <div class="container">
+        <h2>Currently Learning</h2>
+        <ul>
+          <li>⚙️ AI Developer Certificate on Coursera</li>
+          <li>📘 Building EVA — my personal AI assistant</li>
+          <li>📊 Improving problem-solving on LeetCode</li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- Footer / Contact Section with Digital Rain Effect -->
-    <footer
-      id="contact"
-      class="footer-section"
-      role="contentinfo"
-      aria-label="Contact Information"
-    >
-      <div class="footer-content">
-        <h2>Contact Me</h2>
-        <p>Let's connect and create something amazing together.</p>
-        <div class="contact-links">
-          <a href="mailto:your.email@example.com" aria-label="Email">Email</a>
-          <a
-            href="https://www.linkedin.com/in/yourprofile"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn"
-            >LinkedIn</a
-          >
-          <!-- More social links can be added -->
+    <!-- Timeline / Milestones -->
+    <section id="timeline" class="timeline">
+      <div class="container">
+        <h2>My Journey</h2>
+        <div class="timeline-items">
+          <div class="item">🧠 2023: Started CS at Beirut Arab University</div>
+          <div class="item">🌐 2024: Launched abmatar.com</div>
+          <div class="item">🚀 2025: Building EVA OS</div>
         </div>
       </div>
-      <div class="digital-rain" aria-hidden="true">
-        <!-- This container will host the digital rain effect -->
+    </section>
+
+    <!-- What's Next Section -->
+    <section id="whats-next" class="whats-next">
+      <div class="container">
+        <h2>What’s Next?</h2>
+        <p>
+          I'm currently working on a lightweight AI OS called EVA — combining
+          minimalism, responsiveness, and personal productivity tools. Stay
+          tuned...
+        </p>
       </div>
+    </section>
+
+    <!-- Quote / Signature -->
+    <section id="signature" class="signature">
+      <div class="container">
+        <blockquote>
+          “I don't just write code. I architect systems that reflect who I am.”
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>
+          Email: <a href="mailto:abmatar.ai@gmail.com">abmatar.ai@gmail.com</a>
+        </p>
+        <p>LinkedIn: <a href="#">Coming Soon</a></p>
+        <p>&copy; 2025 Abrahim Matar. All rights reserved.</p>
+      </div>
+      <canvas id="footer-rain"></canvas>
     </footer>
 
-    <!-- SVG Definitions (for use in dynamic effects) -->
-    <svg width="0" height="0" style="position: absolute">
-      <defs>
-        <linearGradient id="neural-gradient" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#0F0" />
-          <stop offset="100%" stop-color="#0FF" />
-        </linearGradient>
-      </defs>
-    </svg>
-
-    <!-- Main JavaScript -->
+    <!-- Scripts -->
     <script src="script.js"></script>
   </body>
 </html>
